@@ -1,0 +1,33 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: reservasBus
+  datasource:
+    password: 'willianbdb'
+    url: jdbc:postgresql://localhost:5432/booking-bus-service
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  data:
+    mongodb:
+      uri : mongodb+srv://mongo:willianbdb@cluster0:xutzc3j:mongodb:net/booking-bus-service
+      auto-index-creation: true
+
+
+
+
+
+
+
+
+
